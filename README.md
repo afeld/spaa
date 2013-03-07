@@ -93,14 +93,18 @@ Clarifying questions OK, but save bigger stuff for the end
 
 # Templates
 
-* Compiled templates
 * Logic-less template
-    * [Mustache](http://mustache.github.com/)
-    * [Handlebars](http://handlebarsjs.com/)
+    * [Mustache](http://mustache.github.com/), [Handlebars](http://handlebarsjs.com/)
 * Language-agnostic templates
     * a.k.a. their own language
 * Shared templates
     - e.g. Jux's gallery CSS
+
+!SLIDE
+
+# Template Passing
+
+* Pre-compiled as JS functions
 * [HTML5 `<template>`](http://www.html5rocks.com/en/tutorials/webcomponents/template/)
     - super-new (Chrome only)
 
@@ -109,17 +113,17 @@ Clarifying questions OK, but save bigger stuff for the end
 # Why server-side rendering?
 
 * Crawlers
-    - Google's "AJAX crawling"
+    - [Google's "AJAX crawling"](https://developers.google.com/webmasters/ajax-crawling/)
 * Supa-fast rendering time
-    - Twitter's "Time to First Tweet"
+    - [Twitter's "Time to First Tweet"](http://engineering.twitter.com/2012/05/improving-performance-on-twittercom.html)
 * Any language!
-* Take rendering load off server
+* Take rendering load off server\*
 
 !SLIDE
 
 # Why client-side rendering?
 
-* Replacing values w/ jQuery doesn't get very far
+* `jQuery.html()` doesn't get very far
 * Need immediate feedback to interaction
 * Frequently updating display of data
 * Transitions between "pages"
@@ -128,10 +132,12 @@ Clarifying questions OK, but save bigger stuff for the end
 
 # Hybrid rendering
 
+* Still get page caching
 * [PJAX](http://pjax.heroku.com/)
-* Caching
 
 !SLIDE
+
+# JS Structure
 
 * MVC vs MV*
 * Routers
