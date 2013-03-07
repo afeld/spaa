@@ -13,6 +13,10 @@ Going to attempt to hit *every JS-related buzzword* in 30 mins
 
 !SLIDE
 
+Clarifying questions OK, but save bigger stuff for the end
+
+!SLIDE
+
 # The bliss of traditional sites
 
 * Frequent page loads
@@ -24,10 +28,66 @@ Going to attempt to hit *every JS-related buzzword* in 30 mins
 
 # Client⟺Server Data Passing
 
+* Extract from server-rendered DOM
+
+------------
+
+    @@@html
+    <h1>Welcome, <span class="name">Aidan</span>!</h1>
+    ...
+    <label for="name">Name</label>
+    <input type="text" name="name" value="Aidan Feldman" />
+
+!SLIDE
+
+# Client⟺Server Data Passing
+
+* Extract from server-rendered DOM
+    - Which is canonical?
+
+!SLIDE
+
+# Client⟺Server Data Passing (cont.)
+
 * Script tags
+
+------------
+
+    @@@html
+    <script>
+      myInitFunction({
+        data1: <%= data1_obj %>,
+        data2: <%= data2_obj %>,
+        ...
+      });
+
+      // or
+
+      myGlobal = {
+        data1: <%= data1_obj %>,
+        data2: <%= data2_obj %>,
+        ...
+      };
+    </script>
+
+!SLIDE
+
+# Client⟺Server Data Passing (cont.)
+
+* Script tags
+    - data available immediately
     - no page caching
+
+!SLIDE
+
+# Client⟺Server Data Passing (cont.)
+
+## Async
+
 * AJAX
 * Web Sockets
+    - push support
+    - arguably better for notifications than CRUD
 
 !SLIDE
 
@@ -36,6 +96,7 @@ Going to attempt to hit *every JS-related buzzword* in 30 mins
 * Compiled templates
 * Logic-less template
     * [Mustache](http://mustache.github.com/)
+    * [Handlebars](http://handlebarsjs.com/)
 * Language-agnostic templates
     * a.k.a. their own language
 * Shared templates
