@@ -203,8 +203,9 @@ Concatenation + minification.  Duh.
 * Module loaders
     - CommonJS
     - AMD
-* Whole slew of package managers
-    - Bower, Jam, Volo, Ender, ComponentJS
+* Package managers
+    - Think Pip, Maven, Rubygems, NPM, etc.
+    - Whole slew of them: Bower, Jam, Volo, Ender, ComponentJS
     - Good comparison in [Yeoman docs](http://yeoman.io/packagemanager.html)
 
 !SLIDE
