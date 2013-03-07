@@ -2,7 +2,7 @@
 
 # Single-Page App Architecture
 
-Aidan Feldman
+## Aidan Feldman
 
 View at [github.com/afeld/spaa](https://github.com/afeld/spaa)
 
