@@ -2,14 +2,25 @@
 
 # Single-Page App Architecture
 
-## Aidan Feldman
-Senõr Web Developer, [Jux](https://jux.com)
+Aidan Feldman
 
 View at [github.com/afeld/spaa](https://github.com/afeld/spaa)
 
 !SLIDE
 
+# moi
+
+* Senõr Web Developer, [Jux](https://jux.com)
+* Instructor, [General Assembly](https://generalassemb.ly/) and [NYU](http://scps.nyu.edu/)
+* Author, *[Developing a Backbone.js Edge](http://bleedingedgepress.com/our-books/)* (coming soon!)
+
+!SLIDE
+
 Going to attempt to hit *every JS-related buzzword* in 30 mins
+
+!SLIDE
+
+How many consider themselves "advanced"?
 
 !SLIDE
 
@@ -139,11 +150,10 @@ Clarifying questions OK, but save bigger stuff for the end
 
 # JS Structure
 
-* MVC vs MV*
+* MVC, MV*
 * Routers
 * Widgets
-    - Dojo
-    - jQuery UI
+    - Dojo, jQuery UI
 
 !SLIDE
 
@@ -175,7 +185,7 @@ Concatenation + minification.  Duh.
 
 !SLIDE
 
-# Additional resources
+# Add'l resources
 
 * [Single page apps in depth](http://singlepageappbook.com/)
 
@@ -187,4 +197,4 @@ Aidan Feldman
 
 [@aidanfeldman](https://twitter.com/aidanfeldman)
 
-[afeld.me](http://afeld.me)
+[api.afeld.me](http://api.afeld.me)
