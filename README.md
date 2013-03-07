@@ -168,6 +168,30 @@ Clarifying questions OK, but save bigger stuff for the end
 
 !SLIDE
 
+# Evented
+
+e.g. in Backbone:
+
+    @@@javascript
+    var $name = this.$('.name');
+    user.on('change:name', function(user, newName){
+      $name.text(newName);
+    });
+
+!SLIDE
+
+# Data binding
+
+e.g. in Angular:
+
+    @@@html
+    <input type="text" ng-model="yourName" placeholder="Enter name">
+    <h1>Hello {{yourName}}!</h1>
+
+Look ma, no glue code!
+
+!SLIDE
+
 # Loading
 
 Concatenation + minification.  Duh.
