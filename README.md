@@ -5,6 +5,8 @@
 ## Aidan Feldman
 Senõr Web Developer, [Jux](https://jux.com)
 
+View at [github.com/afeld/spaa](https://github.com/afeld/spaa)
+
 !SLIDE
 
 Going to attempt to hit *every JS-related buzzword* in 30 mins
