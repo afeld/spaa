@@ -30,6 +30,12 @@ Clarifying questions OK, but save bigger stuff for the end
 
 [But first...](https://sphotos-b.xx.fbcdn.net/hphotos-ash3/575026_10200709299914001_991887145_n.jpg)
 
+!SLIDE
+
+# Why!?
+
+!SLIDE
+
 # The bliss of traditional sites
 
 * Frequent page loads
@@ -132,7 +138,6 @@ Clarifying questions OK, but save bigger stuff for the end
 * Supa-fast rendering time
     - [Twitter's "Time to First Tweet"](http://engineering.twitter.com/2012/05/improving-performance-on-twittercom.html)
 * Any language!
-* Take rendering load off server\*
 
 !SLIDE
 
@@ -142,13 +147,16 @@ Clarifying questions OK, but save bigger stuff for the end
 * Need immediate feedback to interaction
 * Frequently updating display of data
 * Transitions between "pages"
+* Take rendering load off server\*
 
 !SLIDE
 
 # Hybrid rendering
 
 * Still get page caching
-* [PJAX](http://pjax.heroku.com/)
+* Options:
+    - Server rendering, client updating
+    - [PJAX](http://pjax.heroku.com/)
 
 !SLIDE
 
@@ -156,6 +164,7 @@ Clarifying questions OK, but save bigger stuff for the end
 
 * MVC, MV*
 * Routers
+    - URL serialization
 * Widgets
     - Dojo, jQuery UI
 
