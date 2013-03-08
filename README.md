@@ -106,6 +106,8 @@ Clarifying questions OK, but save bigger stuff for the end
 
 # Templates
 
+* JS-only (browser or NodeJS)
+    * [Jade](http://jade-lang.com/), [EmbeddedJS (EJS)](http://embeddedjs.com/), [Underscore](http://documentcloud.github.com/underscore/#template), ...
 * Logic-less template
     * [Mustache](http://mustache.github.com/), [Handlebars](http://handlebarsjs.com/)
 * Language-agnostic templates
@@ -248,3 +250,5 @@ Aidan Feldman
 [@aidanfeldman](https://twitter.com/aidanfeldman)
 
 [api.afeld.me](http://api.afeld.me)
+
+[github.com/afeld/spaa](https://github.com/afeld/spaa)
