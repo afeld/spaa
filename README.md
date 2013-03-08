@@ -170,7 +170,7 @@ Clarifying questions OK, but save bigger stuff for the end
 
 # Evented
 
-e.g. in Backbone:
+## Backbone
 
     @@@javascript
     var $name = this.$('.name');
@@ -182,7 +182,7 @@ e.g. in Backbone:
 
 # Data binding
 
-e.g. in Angular:
+## Angular
 
     @@@html
     <input type="text" ng-model="yourName" placeholder="Enter name">
@@ -201,12 +201,35 @@ Concatenation + minification.  Duh.
 # Dependency management
 
 * Module loaders
-    - CommonJS
-    - AMD
-* Package managers
-    - Think Pip, Maven, Rubygems, NPM, etc.
-    - Whole slew of them: Bower, Jam, Volo, Ender, ComponentJS
-    - Good comparison in [Yeoman docs](http://yeoman.io/packagemanager.html)
+  - CommonJS
+  - Asynchronous Module Definition (AMD)
+
+!SLIDE
+
+# Dependency management (cont.)
+
+## RequireJS
+
+    @@@javascript
+    require(['dependency.js'], function(dependency){
+
+      // do stuff
+
+      dependency.on('someEvent', function(){
+        require(['another.js'], function(another){
+          another.doStuff();
+        });
+      });
+
+    });
+
+!SLIDE
+
+# Package managers
+
+* Think Pip, Maven, Rubygems, NPM, etc.
+* Whole slew of them: Bower, Jam, Volo, Ender, ComponentJS
+* Good comparison in [Yeoman docs](http://yeoman.io/packagemanager.html)
 
 !SLIDE
 
