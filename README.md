@@ -20,13 +20,15 @@ Going to attempt to hit *every JS-related buzzword* in 30 mins
 
 !SLIDE
 
-How many consider themselves "advanced"?
+How many consider themselves "advanced" in JS?
 
 !SLIDE
 
 Clarifying questions OK, but save bigger stuff for the end
 
 !SLIDE
+
+[But first...](https://sphotos-b.xx.fbcdn.net/hphotos-ash3/575026_10200709299914001_991887145_n.jpg)
 
 # The bliss of traditional sites
 
@@ -87,7 +89,7 @@ Clarifying questions OK, but save bigger stuff for the end
 
 * Script tags
     - data available immediately
-    - no page caching
+    - tough to do page caching
 
 !SLIDE
 
