@@ -249,6 +249,7 @@ Concatenation + minification.  Duh.
 # Add'l resources
 
 * [Single page apps in depth](http://singlepageappbook.com/)
+* [Deploying JavaScript Applications](http://alexsexton.com/blog/2013/03/deploying-javascript-applications/)
 
 !SLIDE
 
