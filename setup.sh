@@ -1,4 +1,3 @@
 gem install gli -v 1.6.0
 gem install showoff
 showoff serve
-open "http://localhost:9090"
