@@ -10,9 +10,9 @@ View at [github.com/afeld/spaa](https://github.com/afeld/spaa)
 
 # moi
 
-* Senõr Web Developer, [Jux](https://jux.com)
-* Instructor, [General Assembly](https://generalassemb.ly/) and [NYU](http://scps.nyu.edu/)
-* Author, *[Developing a Backbone.js Edge](http://bleedingedgepress.com/our-books/)* (coming soon!)
+* Education Hacker, [GitHub](https://github.com)
+* Instructor, [NYU](http://scps.nyu.edu/)
+* Author, *[Developing a Backbone.js Edge](http://bleedingedgepress.com/our-books/)*
 
 !SLIDE
 
