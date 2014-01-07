@@ -18,9 +18,21 @@ View at [github.com/afeld/spaa](https://github.com/afeld/spaa)
 
 Going to attempt to hit *every JS-related buzzword* in 30 mins
 
+~~~SECTION:notes~~~
+
+TODO change to a clock icon
+
+~~~ENDSECTION~~~
+
 !SLIDE
 
 How many consider themselves "advanced" in JS?
+
+~~~SECTION:notes~~~
+
+I use airquotes because there's no good way to measure level.
+
+~~~ENDSECTION~~~
 
 !SLIDE
 
@@ -40,7 +52,7 @@ Clarifying questions OK, but save bigger stuff for the end
 
 * Frequent page loads
     - Get new code quickly
-    - Garbage collection not necessary
+    - Cleanup is free (stateless)
 * Only load relevant markup/files
 
 !SLIDE
@@ -64,6 +76,12 @@ Clarifying questions OK, but save bigger stuff for the end
 * Extract from server-rendered DOM
     - Which is canonical?
 
+~~~SECTION:notes~~~
+
+TODO show w/ arrow in previous slide
+
+~~~ENDSECTION~~~
+
 !SLIDE
 
 # Client⟺Server Data Passing (cont.)
@@ -76,7 +94,6 @@ Clarifying questions OK, but save bigger stuff for the end
     <script>
       myInitFunction({
         data1: <%= data1_obj %>,
-        data2: <%= data2_obj %>,
         ...
       });
 
@@ -84,7 +101,6 @@ Clarifying questions OK, but save bigger stuff for the end
 
       myGlobal = {
         data1: <%= data1_obj %>,
-        data2: <%= data2_obj %>,
         ...
       };
     </script>
@@ -114,12 +130,16 @@ Clarifying questions OK, but save bigger stuff for the end
 
 * JS-only (browser or NodeJS)
     * [Jade](http://jade-lang.com/), [EmbeddedJS (EJS)](http://embeddedjs.com/), [Underscore](http://documentcloud.github.com/underscore/#template), ...
-* Logic-less template
-    * [Mustache](http://mustache.github.com/), [Handlebars](http://handlebarsjs.com/)
-* Language-agnostic templates
-    * a.k.a. their own language
+* Logic-less/language-agnostic template
+    * [Mustache](http://mustache.github.com/), [Handlebars](http://handlebarsjs.com/), Liquid
 * Shared templates
-    - e.g. Jux's gallery CSS
+    * e.g. Jux's gallery CSS
+
+~~~SECTION:notes~~~
+
+TODO add link for Liquid
+
+~~~ENDSECTION~~~
 
 !SLIDE
 
@@ -127,7 +147,13 @@ Clarifying questions OK, but save bigger stuff for the end
 
 * Pre-compiled as JS functions
 * [HTML5 `<template>`](http://www.html5rocks.com/en/tutorials/webcomponents/template/)
-    - super-new (Chrome only)
+    - Chrome only
+
+~~~SECTION:notes~~~
+
+TODO verify still Chrome only, and be clear on difference from `<script>`
+
+~~~ENDSECTION~~~
 
 !SLIDE
 
