@@ -4,7 +4,7 @@
 
 ## Aidan Feldman
 
-View at [github.com/afeld/spaa](https://github.com/afeld/spaa)
+[github.com/afeld/spaa](https://github.com/afeld/spaa)
 
 !SLIDE
 
@@ -52,7 +52,7 @@ Clarifying questions OK, but save bigger stuff for the end
 
 * Frequent page loads
     - Get new code quickly
-    - Cleanup is free (stateless)
+    - Stateless
 * Only load relevant markup/files
 
 !SLIDE
@@ -165,8 +165,10 @@ TODO add link for Liquid
     @@@javascript
     JST = {};
     JST['myTemplate'] = function(context){
-      return '<div>concat' + context.some + 'strings</div>';
+      return '<div>concat' + context.val + 'strings</div>';
     };
+
+    var markup = JST['myTemplate']({ val: 'some' });
 
 !SLIDE
 
@@ -185,7 +187,7 @@ TODO verify still Chrome only, and be clear on difference from `<script>`
 
 !SLIDE
 
-# Page Load
+# Page Load Times
 
 !SLIDE
 
@@ -193,11 +195,23 @@ TODO verify still Chrome only, and be clear on difference from `<script>`
 
 ![motherfuckingwebsite.com](images/mfw_network.png)
 
+~~~SECTION:notes~~~
+
+Network tab in Chrome Dev Tools
+
+~~~ENDSECTION~~~
+
 !SLIDE
 
 ## GMail
 
 ![gmail](images/gmail_network.png)
+
+~~~SECTION:notes~~~
+
+DOMContentReady is almost 2s in
+
+~~~ENDSECTION~~~
 
 !SLIDE
 
@@ -205,11 +219,23 @@ TODO verify still Chrome only, and be clear on difference from `<script>`
 
 ![motherfuckingwebsite.com](images/mfw_paint.png)
 
+~~~SECTION:notes~~~
+
+Timeline tab in Chrome Dev Tools
+
+~~~ENDSECTION~~~
+
 !SLIDE
 
 ## GMail
 
 ![gmail](images/gmail_paint1.png)
+
+~~~SECTION:notes~~~
+
+can't start painting until almost 1.5s in
+
+~~~ENDSECTION~~~
 
 !SLIDE
 
@@ -217,12 +243,19 @@ TODO verify still Chrome only, and be clear on difference from `<script>`
 
 ![gmail](images/gmail_paint2.png)
 
+~~~SECTION:notes~~~
+
+continues painting up past 6s
+
+~~~ENDSECTION~~~
+
 !SLIDE
 
 # Why server-side rendering?
 
 * Crawlers
     - [Google's "AJAX crawling"](https://developers.google.com/webmasters/ajax-crawling/)
+* Cleanup is free (stateless)
 * Supa-fast rendering time
     - [Twitter's "Time to First Tweet"](http://engineering.twitter.com/2012/05/improving-performance-on-twittercom.html)
 * Any language!
@@ -232,19 +265,32 @@ TODO verify still Chrome only, and be clear on difference from `<script>`
 # Why client-side rendering?
 
 * `jQuery.html()` doesn't get very far
-* Need immediate feedback to interaction
-* Frequently updating display of data
-* Transitions between "pages"
+* Immediate feedback
+* Live-updating
+* Transitions
 * Take rendering load off server\*
+
+~~~SECTION:notes~~~
+
+still need an API
+
+~~~ENDSECTION~~~
 
 !SLIDE
 
 # Hybrid rendering
 
-* Still get page caching
+* Server rendering, client updating
+* Can still cache pages
 * Options:
-    - Server rendering, client updating
+    - Shared code on client + server
     - [PJAX](http://pjax.heroku.com/)
+
+~~~SECTION:notes~~~
+
+server renders intial pageload, client handles navigation
+
+~~~ENDSECTION~~~
 
 !SLIDE
 
@@ -263,9 +309,9 @@ TODO verify still Chrome only, and be clear on difference from `<script>`
 * Evented
     - Backbone
 * Client-side data binding
-    - Angular & Ember
+    - Angular, Ember
 * Full-stack data binding
-    - [Derby](http://derbyjs.com/) and [Meteor](http://meteor.com/)
+    - [Derby](http://derbyjs.com/), [Meteor](http://meteor.com/)
 
 !SLIDE
 
@@ -274,7 +320,7 @@ TODO verify still Chrome only, and be clear on difference from `<script>`
 ## Backbone
 
     @@@javascript
-    var $name = this.$('.name');
+    var $name = $('.name');
     user.on('change:name', function(user, newName){
       $name.text(newName);
     });
@@ -309,7 +355,7 @@ Concatenation + minification.  Duh.
 
 # Dependency management (cont.)
 
-## RequireJS
+## RequireJS (AMD)
 
     @@@javascript
     require(['dependency.js'], function(dependency){
@@ -328,8 +374,9 @@ Concatenation + minification.  Duh.
 
 # Package managers
 
-* Think Pip, Maven, Rubygems, NPM, etc.
-* Whole slew of them: Bower, Jam, Volo, Ender, ComponentJS
+* Think Pip, Maven, Rubygems, etc.
+* Jury is out
+    * Bower, Jam, Volo, Ender, ComponentJS, NPM
 * Good comparison in [Yeoman docs](http://yeoman.io/packagemanager.html)
 
 !SLIDE
