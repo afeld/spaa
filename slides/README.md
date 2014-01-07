@@ -131,7 +131,7 @@ Clarifying questions OK, but save bigger stuff for the end
 
 !SLIDE
 
-# Comparison
+# Page Load
 
 !SLIDE
 
@@ -144,6 +144,24 @@ Clarifying questions OK, but save bigger stuff for the end
 ## GMail
 
 ![gmail](images/gmail_network.png)
+
+!SLIDE
+
+## [motherf\*ckingwebsite.com](http://motherfuckingwebsite.com)
+
+![motherfuckingwebsite.com](images/mfw_paint.png)
+
+!SLIDE
+
+## GMail
+
+![gmail](images/gmail_paint1.png)
+
+!SLIDE
+
+## ...
+
+![gmail](images/gmail_paint2.png)
 
 !SLIDE
 
