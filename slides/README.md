@@ -145,7 +145,41 @@ TODO add link for Liquid
 
 # Template Passing
 
-* Pre-compiled as JS functions
+* Script tags
+
+---
+
+    @@@html
+    <script type="text/template" id="my-template">
+      <div>{{ replace_me }}</div>
+    </script>
+
+    <script>
+      var template = $('#my-template').text();
+      var markup = template.replace('{{ replace_me }}', 'some value');
+      $('.dest').html(markup);
+    </script>
+
+!SLIDE
+
+# Template Passing (cont.)
+
+* Pre-compiled
+
+---
+
+    @@@javascript
+    JST = {};
+    JST['myTemplate'] = function(context){
+      return '<div>concat' + context.some + 'strings</div>';
+    };
+
+!SLIDE
+
+# Template Passing (cont.)
+
+* Script tags
+* Pre-compiled
 * [HTML5 `<template>`](http://www.html5rocks.com/en/tutorials/webcomponents/template/)
     - Chrome only
 
