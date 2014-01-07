@@ -154,12 +154,6 @@ TODO add link for Liquid
       <div>{{ replace_me }}</div>
     </script>
 
-    <script>
-      var template = $('#my-template').text();
-      var markup = template.replace('{{ replace_me }}', 'some value');
-      $('.dest').html(markup);
-    </script>
-
 !SLIDE
 
 # Template Passing (cont.)
