@@ -131,6 +131,22 @@ Clarifying questions OK, but save bigger stuff for the end
 
 !SLIDE
 
+# Comparison
+
+!SLIDE
+
+## [motherf\*ckingwebsite.com](http://motherfuckingwebsite.com)
+
+![motherfuckingwebsite.com](images/mfw_network.png)
+
+!SLIDE
+
+## GMail
+
+![gmail](images/gmail_network.png)
+
+!SLIDE
+
 # Why server-side rendering?
 
 * Crawlers
