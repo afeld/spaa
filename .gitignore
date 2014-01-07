@@ -1,4 +1,6 @@
 /.bundle
+/stats
+
 .DS_Store
 .svn
 log/*.log
