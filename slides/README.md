@@ -393,6 +393,10 @@ Concatenation + minification.  Duh.
 
 <!SLIDE center>
 
+[![tweet](images/tweet.png)](https://twitter.com/necolas/status/291978260433219584)
+
+<!SLIDE center>
+
 # Fin.
 
 Aidan Feldman
