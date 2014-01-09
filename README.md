@@ -8,6 +8,6 @@ Instead of focusing on a particular server or client-side framework, we will lay
 
 ```bash
 bundle install
-bundle exec showoff serve slides
+bundle exec showoff serve
 open http://localhost:9090
 ```

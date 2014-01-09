@@ -1,4 +1,7 @@
 {
   "name": "Aidan Feldman",
-  "description": "Single-Page App Architecture"
+  "description": "Single-Page App Architecture",
+  "sections": [
+    {"section":"slides"}
+  ]
 }
