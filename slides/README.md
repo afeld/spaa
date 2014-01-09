@@ -1,4 +1,4 @@
-<!SLIDE center>
+<!SLIDE center red>
 
 # Single-Page App Architecture
 
@@ -6,7 +6,7 @@
 
 [github.com/afeld/spaa](https://github.com/afeld/spaa)
 
-!SLIDE
+<!SLIDE green>
 
 # moi
 
@@ -14,7 +14,7 @@
 * Instructor, [NYU](http://scps.nyu.edu/)
 * Author, *[Developing a Backbone.js Edge](http://bleedingedgepress.com/our-books/)*
 
-<!SLIDE center>
+<!SLIDE center blue>
 
 Going to attempt to hit *every JS-related buzzword* in 30 mins
 
@@ -24,7 +24,7 @@ TODO change to a clock icon
 
 ~~~ENDSECTION~~~
 
-<!SLIDE center>
+<!SLIDE center blue>
 
 How many consider themselves "advanced" in JS?
 
@@ -34,23 +34,23 @@ I use airquotes because there's no good way to measure level.
 
 ~~~ENDSECTION~~~
 
-<!SLIDE center>
+<!SLIDE center blue>
 
 Clarifying questions OK, but save bigger stuff for the end
 
-<!SLIDE center>
+<!SLIDE center green>
 
 But first...
 
-<!SLIDE center>
+<!SLIDE center blue>
 
 ![grumpy cat](images/grumpy_cat.jpg)
 
-<!SLIDE center>
+<!SLIDE center red>
 
 # Why!?
 
-!SLIDE
+<!SLIDE blue>
 
 # The bliss of traditional sites
 
@@ -59,7 +59,7 @@ But first...
     - Stateless
 * Only load relevant markup/files
 
-!SLIDE
+<!SLIDE blue>
 
 # Client⟺Server Data Passing
 
@@ -75,7 +75,7 @@ But first...
     <label for="name">Name</label>
     <input type="text" name="name" value="Aidan Feldman" />
 
-!SLIDE
+<!SLIDE blue>
 
 # Client⟺Server Data Passing
 
@@ -88,7 +88,7 @@ TODO show w/ arrow in previous slide
 
 ~~~ENDSECTION~~~
 
-!SLIDE
+<!SLIDE blue>
 
 ## Script tags
 
@@ -108,7 +108,7 @@ TODO show w/ arrow in previous slide
 
     </script>
 
-!SLIDE
+<!SLIDE blue>
 
 # Client⟺Server Data Passing
 
@@ -116,7 +116,7 @@ TODO show w/ arrow in previous slide
     - data available immediately
     - tough to do page caching
 
-!SLIDE
+<!SLIDE blue>
 
 # Client⟺Server Data Passing
 
@@ -127,7 +127,7 @@ TODO show w/ arrow in previous slide
     - push support
     - arguably better for notifications than CRUD
 
-!SLIDE
+<!SLIDE red>
 
 # Templates
 
@@ -144,7 +144,7 @@ TODO add link for Liquid
 
 ~~~ENDSECTION~~~
 
-!SLIDE
+<!SLIDE blue>
 
 # Template Passing
 
@@ -157,7 +157,7 @@ TODO add link for Liquid
       <div>{{ replace_me }}</div>
     </script>
 
-!SLIDE
+<!SLIDE blue>
 
 # Template Passing
 
@@ -174,7 +174,7 @@ TODO add link for Liquid
     var data = { val: 'something' };
     var markup = JST['myTemplate'](data);
 
-!SLIDE
+<!SLIDE blue>
 
 # Template Passing
 
@@ -189,11 +189,11 @@ TODO verify still Chrome only, and be clear on difference from `<script>`
 
 ~~~ENDSECTION~~~
 
-<!SLIDE center>
+<!SLIDE center red>
 
 # Page Load Times
 
-<!SLIDE center>
+<!SLIDE center blue>
 
 ## [motherf\*ckingwebsite.com](http://motherfuckingwebsite.com)
 
@@ -205,7 +205,7 @@ Network tab in Chrome Dev Tools
 
 ~~~ENDSECTION~~~
 
-<!SLIDE center>
+<!SLIDE center blue>
 
 ## GMail
 
@@ -217,7 +217,7 @@ DOMContentReady is almost 2s in
 
 ~~~ENDSECTION~~~
 
-<!SLIDE center>
+<!SLIDE center blue>
 
 ## [motherf\*ckingwebsite.com](http://motherfuckingwebsite.com)
 
@@ -229,7 +229,7 @@ Timeline tab in Chrome Dev Tools
 
 ~~~ENDSECTION~~~
 
-<!SLIDE center>
+<!SLIDE center blue>
 
 ## GMail
 
@@ -242,7 +242,7 @@ Timeline tab in Chrome Dev Tools
 
 ~~~ENDSECTION~~~
 
-<!SLIDE center>
+<!SLIDE center blue>
 
 ## ...
 
@@ -254,9 +254,13 @@ continues painting up past 6s
 
 ~~~ENDSECTION~~~
 
-!SLIDE
+<!SLIDE center red>
 
-# Why server-side rendering?
+# Render on server or client?
+
+<!SLIDE blue>
+
+# Server-side?
 
 * Crawlers
     - [Google's "AJAX crawling"](https://developers.google.com/webmasters/ajax-crawling/)
@@ -265,9 +269,9 @@ continues painting up past 6s
     - [Twitter's "Time to First Tweet"](http://engineering.twitter.com/2012/05/improving-performance-on-twittercom.html)
 * Any language!
 
-!SLIDE
+<!SLIDE blue>
 
-# Why client-side rendering?
+# Client-side?
 
 * `jQuery.html()` doesn't get very far
 * Immediate feedback
@@ -281,7 +285,7 @@ still need an API
 
 ~~~ENDSECTION~~~
 
-!SLIDE
+<!SLIDE green>
 
 # Hybrid rendering
 
@@ -297,7 +301,7 @@ server renders intial pageload, client handles navigation
 
 ~~~ENDSECTION~~~
 
-!SLIDE
+<!SLIDE red>
 
 # JS Structure
 
@@ -307,7 +311,7 @@ server renders intial pageload, client handles navigation
 * Widgets
     - Dojo, jQuery UI
 
-!SLIDE
+<!SLIDE blue>
 
 # View updating
 
@@ -318,7 +322,7 @@ server renders intial pageload, client handles navigation
 * Full-stack data binding
     - [Derby](http://derbyjs.com/), [Meteor](http://meteor.com/)
 
-!SLIDE
+<!SLIDE blue>
 
 # Evented
 
@@ -330,25 +334,27 @@ server renders intial pageload, client handles navigation
       $name.text(newName);
     });
 
-!SLIDE
+<!SLIDE blue>
 
 # Data binding
 
 ## Angular
 
     @@@html
-    <input type="text" ng-model="yourName" placeholder="Enter name">
+    <label>Name</label>
+    <input type="text" ng-model="yourName"/>
+
     <h1>Hello {{yourName}}!</h1>
 
-Look ma, no glue code!
+*Look ma, no glue code!*
 
-<!SLIDE center>
+<!SLIDE center red>
 
 # Loading
 
 Concatenation + minification.  Duh.
 
-!SLIDE
+<!SLIDE blue>
 
 # Dependency management
 
@@ -356,7 +362,7 @@ Concatenation + minification.  Duh.
   - CommonJS
   - Asynchronous Module Definition (AMD)
 
-!SLIDE
+<!SLIDE blue>
 
 # Dependency management
 
@@ -375,7 +381,7 @@ Concatenation + minification.  Duh.
 
     });
 
-!SLIDE
+<!SLIDE blue>
 
 # Package managers
 
@@ -384,18 +390,18 @@ Concatenation + minification.  Duh.
     * Bower, Jam, Volo, Ender, ComponentJS, NPM
 * Good comparison in [Yeoman docs](http://yeoman.io/packagemanager.html)
 
-!SLIDE
+<!SLIDE blue>
 
 # Add'l resources
 
 * [Single page apps in depth](http://singlepageappbook.com/)
 * [Deploying JavaScript Applications](http://alexsexton.com/blog/2013/03/deploying-javascript-applications/)
 
-<!SLIDE center>
+<!SLIDE center red>
 
 [![tweet](images/tweet.png)](https://twitter.com/necolas/status/291978260433219584)
 
-<!SLIDE center>
+<!SLIDE center red>
 
 # Fin.
 
