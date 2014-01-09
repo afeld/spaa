@@ -25,5 +25,14 @@ a {
 }
 
 .slide {
-  padding-bottom: 6em;
+  height: 100%;
+  width: 100%;
+  margin-bottom: 6em;
+}
+.slide.center {
+  display: table;
+}
+.slide.center .content {
+  display: table-cell;
+  vertical-align: middle;
 }

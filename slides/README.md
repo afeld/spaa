@@ -1,4 +1,4 @@
-!SLIDE
+<!SLIDE center>
 
 # Single-Page App Architecture
 
@@ -14,7 +14,7 @@
 * Instructor, [NYU](http://scps.nyu.edu/)
 * Author, *[Developing a Backbone.js Edge](http://bleedingedgepress.com/our-books/)*
 
-!SLIDE
+<!SLIDE center>
 
 Going to attempt to hit *every JS-related buzzword* in 30 mins
 
@@ -24,7 +24,7 @@ TODO change to a clock icon
 
 ~~~ENDSECTION~~~
 
-!SLIDE
+<!SLIDE center>
 
 How many consider themselves "advanced" in JS?
 
@@ -34,15 +34,15 @@ I use airquotes because there's no good way to measure level.
 
 ~~~ENDSECTION~~~
 
-!SLIDE
+<!SLIDE center>
 
 Clarifying questions OK, but save bigger stuff for the end
 
-!SLIDE
+<!SLIDE center>
 
 [But first...](https://sphotos-b.xx.fbcdn.net/hphotos-ash3/575026_10200709299914001_991887145_n.jpg)
 
-!SLIDE
+<!SLIDE center>
 
 # Why!?
 
@@ -185,11 +185,11 @@ TODO verify still Chrome only, and be clear on difference from `<script>`
 
 ~~~ENDSECTION~~~
 
-!SLIDE
+<!SLIDE center>
 
 # Page Load Times
 
-!SLIDE
+<!SLIDE center>
 
 ## [motherf\*ckingwebsite.com](http://motherfuckingwebsite.com)
 
@@ -201,7 +201,7 @@ Network tab in Chrome Dev Tools
 
 ~~~ENDSECTION~~~
 
-!SLIDE
+<!SLIDE center>
 
 ## GMail
 
@@ -213,7 +213,7 @@ DOMContentReady is almost 2s in
 
 ~~~ENDSECTION~~~
 
-!SLIDE
+<!SLIDE center>
 
 ## [motherf\*ckingwebsite.com](http://motherfuckingwebsite.com)
 
@@ -225,7 +225,7 @@ Timeline tab in Chrome Dev Tools
 
 ~~~ENDSECTION~~~
 
-!SLIDE
+<!SLIDE center>
 
 ## GMail
 
@@ -237,7 +237,7 @@ can't start painting until almost 1.5s in
 
 ~~~ENDSECTION~~~
 
-!SLIDE
+<!SLIDE center>
 
 ## ...
 
@@ -337,7 +337,7 @@ server renders intial pageload, client handles navigation
 
 Look ma, no glue code!
 
-!SLIDE
+<!SLIDE center>
 
 # Loading
 
@@ -386,7 +386,7 @@ Concatenation + minification.  Duh.
 * [Single page apps in depth](http://singlepageappbook.com/)
 * [Deploying JavaScript Applications](http://alexsexton.com/blog/2013/03/deploying-javascript-applications/)
 
-!SLIDE
+<!SLIDE center>
 
 # Fin.
 
