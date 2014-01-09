@@ -24,6 +24,10 @@ h2 {
   font-weight: bold;
 }
 
+li li {
+  line-height: 1.2;
+}
+
 a {
   text-decoration: none;
 }
