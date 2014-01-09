@@ -1,3 +1,9 @@
+@import url(http://fonts.googleapis.com/css?family=Cutive);
+
+body {
+  font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
+}
+
 #preso,
 .slide {
   position: absolute;
@@ -21,6 +27,7 @@ pre.sh_sourceCode {
 }
 
 h2 {
+  font-family: Verdana, sans-serif;
   font-weight: bold;
 }
 
@@ -62,4 +69,10 @@ a {
 .green.slide {
   background-color: #1A8A27;
   color: #fff;
+}
+
+h1,
+.fun {
+  font-family: 'Cutive', serif;
+  line-height: 1.5;
 }

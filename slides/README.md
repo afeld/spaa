@@ -38,7 +38,7 @@ I use airquotes because there's no good way to measure level.
 
 Clarifying questions OK, but save bigger stuff for the end
 
-<!SLIDE center green>
+<!SLIDE center green fun>
 
 But first...
 
@@ -350,7 +350,9 @@ server renders intial pageload, client handles navigation
 
 <!SLIDE center red>
 
-# Loading
+# Asset Loading
+
+<!SLIDE center green fun>
 
 Concatenation + minification.  Duh.
 
