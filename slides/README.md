@@ -40,7 +40,11 @@ Clarifying questions OK, but save bigger stuff for the end
 
 <!SLIDE center>
 
-[But first...](https://sphotos-b.xx.fbcdn.net/hphotos-ash3/575026_10200709299914001_991887145_n.jpg)
+But first...
+
+<!SLIDE center>
+
+![grumpy cat](images/grumpy_cat.jpg)
 
 <!SLIDE center>
 
@@ -233,7 +237,8 @@ Timeline tab in Chrome Dev Tools
 
 ~~~SECTION:notes~~~
 
-can't start painting until almost 1.5s in
+* can't start painting until almost 1.5s in
+* page load time affects conversion rates
 
 ~~~ENDSECTION~~~
 
