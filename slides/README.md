@@ -55,6 +55,118 @@ But first...
     - Stateless
 * Only load relevant markup/files
 
+<!SLIDE center red>
+
+# Render on server or client?
+
+<!SLIDE blue>
+
+# Server-side?
+
+* Crawlers
+    - [Google's "AJAX crawling"](https://developers.google.com/webmasters/ajax-crawling/)
+* Cleanup is free (stateless)
+* Supa-fast rendering time
+    - [Twitter's "Time to First Tweet"](http://engineering.twitter.com/2012/05/improving-performance-on-twittercom.html)
+* Any language!
+
+<!SLIDE blue>
+
+# Client-side?
+
+* `jQuery.html()` doesn't get very far
+* Immediate feedback
+* Live-updating
+* Transitions
+* Take rendering load off server\*
+
+~~~SECTION:notes~~~
+
+still need an API
+
+~~~ENDSECTION~~~
+
+<!SLIDE green>
+
+# Hybrid rendering
+
+* Server rendering, client updating
+* Can still cache pages
+* Options:
+    - Shared code on client + server
+    - [PJAX](http://pjax.heroku.com/)
+
+~~~SECTION:notes~~~
+
+server renders intial pageload, client handles navigation
+
+~~~ENDSECTION~~~
+
+<!SLIDE center red>
+
+# Page Load Times
+
+<!SLIDE center blue>
+
+## [motherf\*ckingwebsite.com](http://motherfuckingwebsite.com)
+
+![motherfuckingwebsite.com](images/mfw_network.png)
+
+~~~SECTION:notes~~~
+
+Network tab in Chrome Dev Tools
+
+~~~ENDSECTION~~~
+
+<!SLIDE center blue>
+
+## GMail
+
+![gmail](images/gmail_network.png)
+
+~~~SECTION:notes~~~
+
+DOMContentReady is almost 2s in
+
+~~~ENDSECTION~~~
+
+<!SLIDE center blue>
+
+## [motherf\*ckingwebsite.com](http://motherfuckingwebsite.com)
+
+![motherfuckingwebsite.com](images/mfw_paint.png)
+
+~~~SECTION:notes~~~
+
+Timeline tab in Chrome Dev Tools
+
+~~~ENDSECTION~~~
+
+<!SLIDE center blue>
+
+## GMail
+
+![gmail](images/gmail_paint1.png)
+
+~~~SECTION:notes~~~
+
+* can't start painting until almost 1.5s in
+* page load time affects conversion rates
+
+~~~ENDSECTION~~~
+
+<!SLIDE center blue>
+
+## ...
+
+![gmail](images/gmail_paint2.png)
+
+~~~SECTION:notes~~~
+
+continues painting up past 6s
+
+~~~ENDSECTION~~~
+
 <!SLIDE blue>
 
 # Client⟺Server Data Passing
@@ -182,118 +294,6 @@ TODO add link for Liquid
 ~~~SECTION:notes~~~
 
 TODO verify still Chrome only, and be clear on difference from `<script>`
-
-~~~ENDSECTION~~~
-
-<!SLIDE center red>
-
-# Page Load Times
-
-<!SLIDE center blue>
-
-## [motherf\*ckingwebsite.com](http://motherfuckingwebsite.com)
-
-![motherfuckingwebsite.com](images/mfw_network.png)
-
-~~~SECTION:notes~~~
-
-Network tab in Chrome Dev Tools
-
-~~~ENDSECTION~~~
-
-<!SLIDE center blue>
-
-## GMail
-
-![gmail](images/gmail_network.png)
-
-~~~SECTION:notes~~~
-
-DOMContentReady is almost 2s in
-
-~~~ENDSECTION~~~
-
-<!SLIDE center blue>
-
-## [motherf\*ckingwebsite.com](http://motherfuckingwebsite.com)
-
-![motherfuckingwebsite.com](images/mfw_paint.png)
-
-~~~SECTION:notes~~~
-
-Timeline tab in Chrome Dev Tools
-
-~~~ENDSECTION~~~
-
-<!SLIDE center blue>
-
-## GMail
-
-![gmail](images/gmail_paint1.png)
-
-~~~SECTION:notes~~~
-
-* can't start painting until almost 1.5s in
-* page load time affects conversion rates
-
-~~~ENDSECTION~~~
-
-<!SLIDE center blue>
-
-## ...
-
-![gmail](images/gmail_paint2.png)
-
-~~~SECTION:notes~~~
-
-continues painting up past 6s
-
-~~~ENDSECTION~~~
-
-<!SLIDE center red>
-
-# Render on server or client?
-
-<!SLIDE blue>
-
-# Server-side?
-
-* Crawlers
-    - [Google's "AJAX crawling"](https://developers.google.com/webmasters/ajax-crawling/)
-* Cleanup is free (stateless)
-* Supa-fast rendering time
-    - [Twitter's "Time to First Tweet"](http://engineering.twitter.com/2012/05/improving-performance-on-twittercom.html)
-* Any language!
-
-<!SLIDE blue>
-
-# Client-side?
-
-* `jQuery.html()` doesn't get very far
-* Immediate feedback
-* Live-updating
-* Transitions
-* Take rendering load off server\*
-
-~~~SECTION:notes~~~
-
-still need an API
-
-~~~ENDSECTION~~~
-
-<!SLIDE green>
-
-# Hybrid rendering
-
-* Server rendering, client updating
-* Can still cache pages
-* Options:
-    - Shared code on client + server
-    - [PJAX](http://pjax.heroku.com/)
-
-~~~SECTION:notes~~~
-
-server renders intial pageload, client handles navigation
 
 ~~~ENDSECTION~~~
 
