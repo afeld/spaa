@@ -15,6 +15,10 @@ pre.sh_sourceCode {
   line-height: 1.5em;
 }
 
+.center h1 {
+  padding-left: 50px;
+  padding-right: 50px;
+}
 
 h2 {
   font-weight: bold;

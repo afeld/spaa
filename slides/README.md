@@ -144,7 +144,7 @@ TODO add link for Liquid
 
 # Template Passing
 
-* Script tags
+## Script tags
 
 ---
 
@@ -157,7 +157,7 @@ TODO add link for Liquid
 
 # Template Passing
 
-* Pre-compiled
+## Pre-compiled
 
 ---
 
