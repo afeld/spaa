@@ -2,7 +2,7 @@
 
 # Single-Page App Architecture
 
-## Aidan Feldman
+## @aidanfeldman
 
 [github.com/afeld/spaa](https://github.com/afeld/spaa)
 
@@ -63,7 +63,7 @@ But first...
 
 # Client⟺Server Data Passing
 
-* Extract from server-rendered DOM
+## Extract from server-rendered DOM
 
 ------------
 
@@ -407,9 +407,7 @@ Concatenation + minification.  Duh.
 
 # Fin.
 
-Aidan Feldman
-
-[@aidanfeldman](https://twitter.com/aidanfeldman)
+## [@aidanfeldman](https://twitter.com/aidanfeldman)
 
 [api.afeld.me](http://api.afeld.me)
 
