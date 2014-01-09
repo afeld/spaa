@@ -64,7 +64,9 @@ Clarifying questions OK, but save bigger stuff for the end
 ------------
 
     @@@html
-    <h1>Welcome, <span class="name">Aidan</span>!</h1>
+    <h1>
+      Welcome, <span class="name">Aidan</span>!
+    </h1>
     ...
     <label for="name">Name</label>
     <input type="text" name="name" value="Aidan Feldman" />
@@ -84,30 +86,27 @@ TODO show w/ arrow in previous slide
 
 !SLIDE
 
-# Client⟺Server Data Passing (cont.)
-
-* Script tags
+## Script tags
 
 ------------
 
     @@@html
     <script>
-      myInitFunction({
-        data1: <%= data1_obj %>,
-        ...
-      });
 
-      // or
-
-      myGlobal = {
+      myData = {
         data1: <%= data1_obj %>,
         ...
       };
+
+      // or maybe
+
+      myInitFunction(myData);
+
     </script>
 
 !SLIDE
 
-# Client⟺Server Data Passing (cont.)
+# Client⟺Server Data Passing
 
 * Script tags
     - data available immediately
@@ -115,7 +114,7 @@ TODO show w/ arrow in previous slide
 
 !SLIDE
 
-# Client⟺Server Data Passing (cont.)
+# Client⟺Server Data Passing
 
 ## Async
 
@@ -156,7 +155,7 @@ TODO add link for Liquid
 
 !SLIDE
 
-# Template Passing (cont.)
+# Template Passing
 
 * Pre-compiled
 
@@ -165,14 +164,15 @@ TODO add link for Liquid
     @@@javascript
     JST = {};
     JST['myTemplate'] = function(context){
-      return '<div>concat' + context.val + 'strings</div>';
+      return '<div>' + context.val + '</div>';
     };
 
-    var markup = JST['myTemplate']({ val: 'some' });
+    var data = { val: 'something' };
+    var markup = JST['myTemplate'](data);
 
 !SLIDE
 
-# Template Passing (cont.)
+# Template Passing
 
 * Script tags
 * Pre-compiled
@@ -353,7 +353,7 @@ Concatenation + minification.  Duh.
 
 !SLIDE
 
-# Dependency management (cont.)
+# Dependency management
 
 ## RequireJS (AMD)
 
