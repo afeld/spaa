@@ -61,29 +61,23 @@ But first...
 
 # The bliss of traditional sites
 
+* Crawlable
 * Frequent page loads
-    - Get new code quickly
-    - Stateless
 * Only load relevant markup/files
-
-<!SLIDE center red>
-
-# Render on server or client?
-
-<!SLIDE blue>
-
-# Server-side?
-
-* Crawlers
-    - [Google's "AJAX crawling"](https://developers.google.com/webmasters/ajax-crawling/)
-* Cleanup is free (stateless)
-* Supa-fast rendering time
-    - [Twitter's "Time to First Tweet"](http://engineering.twitter.com/2012/05/improving-performance-on-twittercom.html)
 * Any language!
 
+~~~SECTION:notes~~~
+
+* [Google's "AJAX crawling"](https://developers.google.com/webmasters/ajax-crawling/)
+* Get new code quickly
+* Stateless
+* [Twitter's "Time to First Tweet"](http://engineering.twitter.com/2012/05/improving-performance-on-twittercom.html)
+
+~~~ENDSECTION~~~
+
 <!SLIDE blue>
 
-# Client-side?
+# Why client-side?
 
 * `jQuery.html()` doesn't get very far
 * Immediate feedback
