@@ -24,6 +24,17 @@ I use airquotes because there's no good way to measure level.
 
 ~~~ENDSECTION~~~
 
+<!SLIDE red>
+
+# TODO
+
+* Tradeoffs
+* Page load *vroom vroom*
+* Data exchange
+* Rendering
+* JS structure
+* JS loading
+
 <!SLIDE center blue>
 
 Going to attempt to hit *every JS-related buzzword* in 45 mins
