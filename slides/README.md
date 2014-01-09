@@ -12,7 +12,10 @@
 
 * Education Hacker, [GitHub](https://github.com)
 * Instructor, [NYU](http://scps.nyu.edu/)
+* Organizer, [Hacker Hours](http://hackerhours.org)
 * Author, *[Developing a Backbone.js Edge](http://bleedingedgepress.com/our-books/)*
+* Dancer
+* Cyclist
 
 <!SLIDE center blue>
 
