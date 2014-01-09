@@ -16,7 +16,7 @@
 
 <!SLIDE center blue>
 
-Going to attempt to hit *every JS-related buzzword* in 30 mins
+Going to attempt to hit *every JS-related buzzword* in 45 mins
 
 ~~~SECTION:notes~~~
 
