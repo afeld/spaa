@@ -16,16 +16,6 @@
 
 <!SLIDE center blue>
 
-Going to attempt to hit *every JS-related buzzword* in 45 mins
-
-~~~SECTION:notes~~~
-
-TODO change to a clock icon
-
-~~~ENDSECTION~~~
-
-<!SLIDE center blue>
-
 How many consider themselves "advanced" in JS?
 
 ~~~SECTION:notes~~~
@@ -36,7 +26,13 @@ I use airquotes because there's no good way to measure level.
 
 <!SLIDE center blue>
 
-Clarifying questions OK, but save bigger stuff for the end
+Going to attempt to hit *every JS-related buzzword* in 45 mins
+
+~~~SECTION:notes~~~
+
+TODO change to a clock icon
+
+~~~ENDSECTION~~~
 
 <!SLIDE center green fun>
 
